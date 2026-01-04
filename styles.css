@@ -215,7 +215,7 @@
   align-items: center;
   justify-content: center;
   padding: 30px 20px;
-  background-color: #252525;
+  background-color: #1a1a1a;
   color: white;
   text-align: center;
 }
@@ -228,11 +228,11 @@
 #competitions .intro {
   font-size: 1.1rem;
   margin-bottom: 50px;
-  max-width: 800px;
+  max-width: 900px;
   margin-left: auto;
   margin-right: auto;
   line-height: 1.6;
-  color: #ccc;
+  color: white;
 }
 
 .competitions-parent {
@@ -244,7 +244,7 @@
 }
 
 .competition-card {
-  background-color: #1a1a1a;
+  background-color: #111111;
   padding: 30px 20px;
   border-radius: 12px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -313,10 +313,209 @@
   }
 }
 
+#services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 20px;
+  background-color: #252525;
+  color: white;
+  text-align: center;
+}
+
+.sub-header {
+  display: flex;
+}
+
+.sub-header.brands {
+  justify-content: flex-start;
+  margin: 10px;
+  font-size: 1.5rem;
+}
+
+.sub-header.sponsors {
+  justify-content: flex-end;
+  margin: 10px;
+  font-size: 1.5rem;
+}
+
+.sub-header.gigs {
+  justify-content: flex-start;
+  margin: 10px;
+  font-size: 1.5rem;
+}
+
+.purple {
+  color: #d851f3;
+}
+
+#services .intro {
+  font-size: 1.1rem;
+  margin-bottom: 50px;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+  color: white;
+}
+
+.logos-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.logos-row img {
+  max-width: 60px;
+  height: auto;
+  filter: grayscale(100%);
+  opacity: 0.8;
+  transition: filter 0.3s ease, transform 0.3s ease, opacity 0.3s ease;
+}
+
+.logos-row img:hover {
+  filter: grayscale(0%);
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+#events {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 20px;
+  background-color: #1a1a1a;
+  color: white;
+  text-align: center;
+}
+
+#contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 20px;
+  background-color: #252525;
+  color: white;
+  text-align: center;
+}
+
 .footer {
   background-color: rgb(0, 0, 0);
   color: white;
   text-align: center;
   padding: 15px 10px;
   font-size: 0.9rem;
+}
+
+/* =========================
+   LARGE SCREENS (1200px+)
+========================= */
+@media (min-width: 1200px) {
+  .about-image img {
+    transform: scale(1.1);
+  }
+}
+
+/* =========================
+   TABLET & LAPTOP (768px–1199px)
+========================= */
+@media (max-width: 1199px) and (min-width: 768px) {
+  .about-image img {
+    transform: scale(1.1);
+  }
+
+  .header {
+    font-size: 2.2rem;
+  }
+}
+
+/* =========================
+   TABLET / SMALL SCREENS (601px–767px)
+========================= */
+@media (max-width: 767px) {
+  /* Hero */
+  .hero-btns {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  /* About */
+  .about-parent {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .about-text p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    max-width: 100%;
+  }
+
+  .about-image {
+    width: 300px;
+    aspect-ratio: 380 / 450;
+    height: auto;
+  }
+
+  .about-image img {
+    transform: scale(1.1);
+  }
+
+  /* Competitions */
+  .competitions-parent {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+  }
+}
+
+/* =========================
+   MOBILE (600px and below)
+========================= */
+@media (max-width: 600px) {
+  /* Hero */
+  #home h1 {
+    font-size: 2.8rem;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  /* Competitions */
+  .competitions-parent {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  #competitions .header {
+    font-size: 2.2rem;
+  }
+
+  #competitions .intro {
+    font-size: 1rem;
+    margin-bottom: 30px;
+  }
+
+  .competition-card {
+    padding: 25px 15px;
+  }
+
+  .competition-card h3 {
+    font-size: 1.3rem;
+  }
+
+  /* Logos */
+  .logos-row {
+    gap: 30px;
+  }
+
+  .logos-row img {
+    max-width: 50px;
+  }
 }
