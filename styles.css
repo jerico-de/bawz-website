@@ -383,6 +383,39 @@
   transform: scale(1.1);
 }
 
+.service-btn {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+@media (max-width: 600px) {
+  .service-btn {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
+.service-btn {
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.service-btn {
+  background-color: #9900b8;
+  color: black;
+  border: 2px solid #9900b8;
+}
+
+.service-btn:hover {
+  background-color: rgba(0, 0, 0, 0.623);
+  color: white;
+  transition: 0.6s;
+}
+
 #events {
   display: flex;
   flex-direction: column;
