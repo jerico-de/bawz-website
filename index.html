@@ -1,280 +1,311 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" viewport="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bawz PH</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lexend+Exa:wght@100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Racing+Sans+One&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Exa:wght@100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Racing+Sans+One&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
   </head>
 
   <body>
     <!-- Navigation Bar -->
-    <div class="container navbar">
-      <div class="logo">
-        <a href="#home"><img src="images/bawz-logo.jpg" alt="Bawz Logo" /></a>
+    <nav class="navbar">
+      <div class="container nav-container">
+        <div class="logo">
+          <a href="#home"><img src="images/bawz-logo.jpg" alt="Bawz Logo" /></a>
+        </div>
+
+        <!-- Hamburger -->
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <div class="nav-links" id="navLinks">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#competitions">Competitions</a>
+          <a href="#services">Services</a>
+          <a href="#events">Events</a>
+          <a href="#contact">Contact</a>
+        </div>
       </div>
-      <div class="nav-links">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#competitions">Competitions</a>
-        <a href="#services">Services</a>
-        <a href="#events">Events</a>
-        <a href="#contact">Contact</a>
-      </div>
-    </div>
+    </nav>
 
     <!-- Hero Section -->
-    <div class="container hero-section" id="home">
-      <h1>Raw Like A <span class="boss">Boss.</span></h1>
-      <p>
-        Bawz is a Philippine-based dance collective driven by individuality, and
-        rawness in movement.
-      </p>
+    <section class="hero-section" id="home">
+      <div class="container">
+        <h1>
+          Raw Like A
+          <span class="boss">Boss.</span>
+        </h1>
+        <p class="hero-description">Bawz is a Philippine-based dance collective driven by individuality and rawness in movement.</p>
 
-      <div class="hero-btns">
-        <a href="#services" class="btn service-btn">Explore Our Services</a>
-        <a
-          href="https://jerico-de.github.io/bawz-complex-website/"
-          class="btn studio-btn"
-          >Visit Our Studio</a
-        >
+        <div class="hero-btns">
+          <a href="#services" class="btn service-btn">Explore Our Services</a>
+          <a href="https://jerico-de.github.io/bawz-complex-website/" class="btn studio-btn">Visit Our Studio</a>
+        </div>
       </div>
-    </div>
+    </section>
 
     <!-- About Section -->
-    <div class="container" id="about">
-      <h2 class="header">About Us</h2>
-      <div class="about-parent">
-        <div class="about-text">
-          <p>
-            Bawz PH was founded in <strong>2019</strong> by a group of
-            individuals united by the same raw style and vision, led by
-            <span class="ae-about">Aennon Tabungar</span>.
-          </p>
+    <section class="section" id="about">
+      <div class="container">
+        <h2 class="section-header">About Us</h2>
+        <div class="about-content">
+          <div class="about-text">
+            <p>
+              Bawz PH was founded in
+              <strong>2019</strong>
+              by a group of individuals united by the same raw style and vision, led by
+              <span class="highlight">Aennon Tabungar</span>
+              .
+            </p>
 
-          <p>
-            What started as a small collective has grown into a powerful
-            movement. Today, Directed by Aennon Tabungar, Bawz is home to
-            <strong>80+ dancers</strong>, each bringing their own flavor, story,
-            and energy—yet moving as one.
-          </p>
-        </div>
+            <p>
+              What started as a small collective has grown into a powerful movement. Today, Directed by Aennon Tabungar, Bawz is home to
+              <strong>80+ dancers</strong>
+              , each bringing their own flavor, story, and energy—yet moving as one.
+            </p>
+          </div>
 
-        <div class="about-image">
-          <img
-            src="images/ae-about.jpg"
-            alt="Director Aennon Tabungar"
-            width="600px"
-          />
+          <div class="about-image">
+            <img src="images/ae-about.jpg" alt="Director Aennon Tabungar" />
+          </div>
         </div>
       </div>
-    </div>
+    </section>
 
     <!-- Competitions Section -->
-    <div class="container" id="competitions">
-      <h2 class="header">Competitions</h2>
-      <p class="intro">
-        Bawz continues to challenge itself by stepping onto competitive stages
-        locally and internationally. These experiences shape our discipline,
-        creativity, and hunger to evolve.
-      </p>
-      <div class="competitions-parent">
-        <div class="competition-card">
-          <img
-            src="images/comp-danceEx.jpg"
-            alt="Bawz at Lion CityLight Dance Competition"
-            width="100%"
-          />
-          <h3>Lion Citylite Dance Competition</h3>
-          <p class="date-location">August 3, 2025 | Singapore</p>
-          <p class="details">
-            16 members | Only Philippine team | Won against international teams
-            to claim the championship
-          </p>
-        </div>
+    <section class="section section-dark" id="competitions">
+      <div class="container">
+        <h2 class="section-header">Competitions</h2>
+        <p class="section-intro">
+          Bawz continues to challenge itself by stepping onto competitive stages locally and internationally. These experiences shape our discipline, creativity, and hunger to evolve.
+        </p>
+        <div class="card-grid">
+          <div class="card">
+            <div class="card-image">
+              <img src="images/comp-danceEx.jpg" alt="Bawz at Lion CityLight Dance Competition" />
+            </div>
+            <div class="card-content">
+              <h3>Lion Citylite Dance Competition</h3>
+              <p class="card-meta">August 3, 2025 | Singapore</p>
+              <p class="card-description">16 members | Only Philippine team | Won against international teams to claim the championship</p>
+            </div>
+          </div>
 
-        <div class="competition-card">
-          <img
-            src="images/comp-chosenGrounds.jpg"
-            alt="Bawz at Chosen Grounds Competition"
-            width="100%"
-          />
-          <h3>Chosen Grounds</h3>
-          <p class="date-location">
-            May 5, 2025 | Metropolitan Theater, Manila
-          </p>
-          <p class="details">
-            30 members | Competed against 20+ teams | Secured 2nd place with raw
-            energy and precision
-          </p>
-        </div>
+          <div class="card">
+            <div class="card-image">
+              <img src="images/comp-chosenGrounds.jpg" alt="Bawz at Chosen Grounds Competition" />
+            </div>
+            <div class="card-content">
+              <h3>Chosen Grounds</h3>
+              <p class="card-meta">May 5, 2025 | Metropolitan Theater, Manila</p>
+              <p class="card-description">30 members | Competed against 20+ teams | Secured 2nd place with raw energy and precision</p>
+            </div>
+          </div>
 
-        <div class="competition-card">
-          <img
-            src="images/comp-wsup.jpg"
-            alt="Bawz at WSUP Competition"
-            width="100%"
-          />
-          <h3>WSUP – Worldwide Stage Uniting Performers</h3>
-          <p class="date-location">October 16, 2024 | Changsha, China</p>
-          <p class="details">
-            Only Philippine team | Competed against 30+ international teams |
-            Finished 3rd runner-up
-          </p>
+          <div class="card">
+            <div class="card-image">
+              <img src="images/comp-wsup.jpg" alt="Bawz at WSUP Competition" />
+            </div>
+            <div class="card-content">
+              <h3>WSUP – Worldwide Stage Uniting Performers</h3>
+              <p class="card-meta">October 16, 2024 | Changsha, China</p>
+              <p class="card-description">Only Philippine team | Competed against 30+ international teams | Finished 3rd runner-up</p>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
 
     <!-- Services Section -->
-    <div class="container" id="services">
-      <h2 class="header">Work With Us</h2>
-      <p class="intro">
-        Bawz offers a range of services to bring dynamic dance performances and
-        creative energy to your events and projects. Whether you're looking for
-        captivating stage performances, engaging workshops, or custom
-        choreography, we have the expertise to elevate your vision.
-      </p>
-
-      <div class="service-card">
-        <h3 class="sub-header brands">
-          <span class="purple">Brands</span>We've Worked With
-        </h3>
-        <p class="intro">
-          We believe in creative collaborations that align with culture,
-          movement, and community. Bawz has worked with both established and
-          emerging brands through performances, campaigns, and live events.
+    <section class="section" id="services">
+      <div class="container">
+        <h2 class="section-header">Work With Us</h2>
+        <p class="section-intro">
+          Bawz offers a range of services to bring dynamic dance performances and creative energy to your events and projects. Whether you're looking for captivating stage performances, engaging
+          workshops, or custom choreography, we have the expertise to elevate your vision.
         </p>
-        <div class="logos-row">
-          <img src="images/brands-uniqlo.png" alt="Uniqlo Logo" />
-          <img src="images/brands-chevrolet.png" alt="Chevrolet Logo" />
-          <img src="images/brands-winston.png" alt="Winston Logo" />
+
+        <div class="service-card">
+          <h3 class="service-title">
+            <span class="highlight">Brands</span>
+            We've Worked With
+          </h3>
+          <p class="service-description">
+            We believe in creative collaborations that align with culture, movement, and community. Bawz has worked with both established and emerging brands through performances, campaigns, and live
+            events.
+          </p>
+          <div class="logos-row">
+            <img src="images/brands-uniqlo.png" alt="Uniqlo Logo" />
+            <img src="images/brands-chevrolet.png" alt="Chevrolet Logo" />
+            <img src="images/brands-winston.png" alt="Winston Logo" />
+          </div>
+        </div>
+
+        <div class="service-card">
+          <h3 class="service-title service-title-right">
+            Sponsorship &
+            <span class="highlight">Partnership</span>
+          </h3>
+          <p class="service-description">We offer tailored sponsorship packages that provide unique opportunities for brand exposure and engagement through our dynamic dance performances.</p>
+          <div class="logos-row">
+            <img src="images/spons-dri+.png" alt="Dri+ Logo" />
+            <img src="images/spons-quickfx.png" alt="QuickFX Logo" />
+          </div>
+        </div>
+
+        <div class="service-card">
+          <h3 class="service-title">
+            <span class="highlight">Gig</span>
+            Bookings
+          </h3>
+          <p class="service-description">
+            Whether it's a corporate function, festival, or private celebration, our team is ready to bring high-energy performances that captivate and entertain your audience.
+          </p>
+        </div>
+
+        <div class="cta-wrapper">
+          <a href="#contact" class="btn service-btn">Work With Us</a>
         </div>
       </div>
-
-      <div class="service-card">
-        <h3 class="sub-header sponsors">
-          Sponsorship & <span class="purple">Partnership</span>
-        </h3>
-        <p class="intro">
-          We offer tailored sponsorship packages that provide unique
-          opportunities for brand exposure and engagement through our dynamic
-          dance performances.
-        </p>
-        <div class="logos-row">
-          <img src="images/spons-dri+.png" alt="Dri+ Logo" />
-          <img src="images/spons-quickfx.png" alt="QuickFX Logo" />
-        </div>
-      </div>
-
-      <div class="service-card">
-        <h3 class="sub-header gigs">
-          <span class="purple">Gig</span> Bookings
-        </h3>
-        <p class="intro">
-          Whether it's a corporate function, festival, or private celebration,
-          our team is ready to bring high-energy performances that captivate and
-          entertain your audience.
-        </p>
-      </div>
-      <a href="#contact" class="btn service-btn">Work With Us</a>
-    </div>
+    </section>
 
     <!-- Events Section -->
-    <div class="container" id="events">
-      <h2 class="header">Events</h2>
-      <p class="intro">
-        More than performances, our events create spaces for dancers to grow,
-        connect, and be seen — from community classes to full-scale showcases
-        and international qualifiers.
-      </p>
-      <div class="events-parent">
-        <div class="event-card">
-          <img
-            src="images/events-communityClasses.jpg"
-            alt="Bawz Annual Showcase"
-            width="100%"
-          />
-          <h3>Bawz Complex Community Classes</h3>
-          <p class="date-location">December 27–28, 2025 | Bawz Complex</p>
-          <p class="details">
-            A community-driven, pay-what-you-can dance event created to make
-            movement accessible to everyone. Over two full days, Bawz PH hosted
-            back-to-back classes featuring multiple styles and levels, allowing
-            dancers of all backgrounds to learn, grow, and connect in one shared
-            space.
-          </p>
-        </div>
+    <section class="section section-dark" id="events">
+      <div class="container">
+        <h2 class="section-header">Events</h2>
+        <p class="section-intro">
+          More than performances, our events create spaces for dancers to grow, connect, and be seen — from community classes to full-scale showcases and international qualifiers.
+        </p>
+        <div class="card-grid">
+          <div class="card">
+            <div class="card-image">
+              <img src="images/events-communityClasses.jpg" alt="Bawz Annual Showcase" />
+            </div>
+            <div class="card-content">
+              <h3>Bawz Complex Community Classes</h3>
+              <p class="card-meta">December 27–28, 2025 | Bawz Complex</p>
+              <p class="card-description">
+                A community-driven, pay-what-you-can dance event created to make movement accessible to everyone. Over two full days, Bawz PH hosted back-to-back classes featuring multiple styles and
+                levels, allowing dancers of all backgrounds to learn, grow, and connect in one shared space.
+              </p>
+            </div>
+          </div>
 
-        <div class="event-card">
-          <img
-            src="images/events-bawzStage.jpg"
-            alt="Bawz Dance Workshop"
-            width="100%"
-          />
-          <h3>Bawz Stage: Volume 3</h3>
-          <p class="date-location">July 26, 2025 | SM Skydome</p>
-          <p class="details">
-            Bawz Stage Volume 3 was a full-scale dance concert showcasing Bawz
-            PH’s versatility through original pieces across different styles.
-            The night also featured performances from various dance teams in the
-            community, turning the stage into a celebration of creativity,
-            collaboration, and raw performance energy.
-          </p>
-        </div>
+          <div class="card">
+            <div class="card-image">
+              <img src="images/events-bawzStage.jpg" alt="Bawz Dance Workshop" />
+            </div>
+            <div class="card-content">
+              <h3>Bawz Stage: Volume 3</h3>
+              <p class="card-meta">July 26, 2025 | SM Skydome</p>
+              <p class="card-description">
+                Bawz Stage Volume 3 was a full-scale dance concert showcasing Bawz PH's versatility through original pieces across different styles. The night also featured performances from various
+                dance teams in the community, turning the stage into a celebration of creativity, collaboration, and raw performance energy.
+              </p>
+            </div>
+          </div>
 
-        <div class="event-card">
-          <img
-            src="images/events-summerJam.jpg"
-            alt="Bawz International Qualifier"
-            width="100%"
-          />
-          <h3>SummerJam Showcase Competition Philippine Qualifier</h3>
-          <p class="date-location">
-            November 16, 2024 | Henry Lee Irwin Theater
-          </p>
-          <p class="details">
-            Bawz PH proudly organized the Philippine Qualifier for the SummerJam
-            Showcase Competition, an international dance franchise originating
-            in Vietnam. The event gathered top local teams competing for a
-            chance to represent the Philippines on the global stage against
-            international contenders.
-          </p>
+          <div class="card">
+            <div class="card-image">
+              <img src="images/events-summerJam.jpg" alt="Bawz International Qualifier" />
+            </div>
+            <div class="card-content">
+              <h3>SummerJam Showcase Competition Philippine Qualifier</h3>
+              <p class="card-meta">November 16, 2024 | Henry Lee Irwin Theater</p>
+              <p class="card-description">
+                Bawz PH proudly organized the Philippine Qualifier for the SummerJam Showcase Competition, an international dance franchise originating in Vietnam. The event gathered top local teams
+                competing for a chance to represent the Philippines on the global stage against international contenders.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
 
     <!-- Contact Section -->
-    <div class="container" id="contact">
-      <h2 class="header">Contact Us</h2>
-      <p class="contact-intro">
-        Whether you're interested in booking Bawz for an event, collaborating on
-        a project, or simply want to learn more about what we do, we'd love to
-        hear from you!
-      </p>
+    <section class="section" id="contact">
+      <div class="container">
+        <h2 class="section-header">Contact Us</h2>
+        <p class="section-intro">Whether you're interested in booking Bawz for an event, collaborating on a project, or simply want to learn more about what we do, we'd love to hear from you!</p>
 
-      <div class="contact-card">
-        <p class="intro">
-          Reach out to us via email at
-          <a href="mailto:contact@bawzph.com">contact@bawzph.com</a> or connect
-          with us on our social media channels.
-        </p>
+        <div class="contact-content">
+          <div class="contact-card">
+            <div class="contact-method">
+              <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              <div class="contact-details">
+                <h3>Email</h3>
+                <a href="mailto:bawzph@gmail.com">bawzph@gmail.com</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-method">
+              <svg class="contact-icon" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"
+                />
+              </svg>
+              <div class="contact-details">
+                <h3>Facebook</h3>
+                <a href="https://www.facebook.com/bawz.ph" target="_blank">Bawz Profile</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-method">
+              <svg class="contact-icon" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+                />
+              </svg>
+              <div class="contact-details">
+                <h3>Instagram</h3>
+                <a href="https://www.instagram.com/bawz.ph?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">Bawz Profile</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-cta">
+          <p>Connect with us on social media or send us an email. We're excited to work with you!</p>
+        </div>
       </div>
-    </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2024 Bawz PH. All rights reserved. Developed by Jerico Crisostomo</p>
+      </div>
+    </footer>
+
+    <!-- Script -->
+    <script>
+      const hamburger = document.getElementById("hamburger");
+      const navLinks = document.getElementById("navLinks");
+
+      hamburger.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+      });
+
+      document.querySelectorAll(".nav-links a").forEach((link) => {
+        link.addEventListener("click", () => {
+          navLinks.classList.remove("active");
+        });
+      });
+    </script>
   </body>
-
-  <footer>
-    <div class="footer">
-      <p>
-        &copy; 2024 Bawz PH. All rights reserved. Developed by Jerico Crisostomo
-      </p>
-    </div>
-  </footer>
 </html>
-
-<!-- Sponsors booster c, dri+, clover, quickfx -->
-<!-- Brands uniqlo, chevrolet, winston, american tourister -->
