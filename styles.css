@@ -442,6 +442,35 @@ body {
   }
 }
 
+.competitions-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(17,18,19,0.88);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  opacity: 0;
+  transition: opacity var(--transition);
+  z-index: 2;
+}
+.card:hover .competitions-overlay { opacity: 1; }
+
+.btn-sm {
+  display: inline-block;
+  padding: 0.45rem 1rem;
+  background: var(--color-primary-dark);
+  color: #111;
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-weight: 700;
+  border-radius: var(--border-radius);
+  transition: background var(--transition-speed) ease;
+  text-decoration: none;
+}
+.btn-sm:hover { background: #670179; }
+
 /* =========================
    SERVICES SECTION
 ========================= */
