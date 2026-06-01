@@ -17,8 +17,8 @@
   --zinc:         #333333;
   --dim:          #3a2e3e;
 
-  --purple:       #9900b8;
-  --purple-dim:   #74008b;
+  --purple:       #76098b;
+  --purple-dim:   #510361;
   --purple-glow:  rgba(153, 0, 184, 0.15);
   --purple-faint: rgba(153, 0, 184, 0.06);
   --purple-mid:   rgba(153, 0, 184, 0.12);
@@ -225,7 +225,7 @@ img {
   justify-content: center;
   padding-top: var(--nav-h);
   background-image:
-    linear-gradient(to bottom, rgba(8,8,8,0.88) 0%, rgba(8,8,8,0.65) 50%, rgba(8,8,8,0.88) 100%),
+    linear-gradient(to bottom, rgba(8, 8, 8, 0.678) 0%, rgba(8, 8, 8, 0.795) 50%, rgb(8, 8, 8) 100%),
     url("images/hero-bg.jpg");
   background-size: cover;
   background-position: center;
