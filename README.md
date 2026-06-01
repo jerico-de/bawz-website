@@ -18,7 +18,7 @@ A modern, responsive website for **BAWZ PH**, a Philippine-based dance group fou
 
 ---
 
-## 🛠 Tech Stack
+## Tech Stack
 
 - HTML5
 - CSS3
@@ -26,7 +26,7 @@ A modern, responsive website for **BAWZ PH**, a Philippine-based dance group fou
 
 ---
 
-## 📂 Sections
+## Sections
 
 ### Home
 Landing page featuring the BAWZ PH identity and call-to-action.
@@ -48,7 +48,7 @@ Direct contact information and social media links.
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 1. Clone the repository
 
@@ -66,13 +66,13 @@ cd bawz-ph
 
 ---
 
-## 👨‍💻 Developer
+## Developer
 
 **Jerico Crisostomo**
 
 ---
 
-## 📜 License
+## License
 
 This project is intended for the official use of **BAWZ PH**.
 
