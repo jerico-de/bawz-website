@@ -6,19 +6,31 @@
     <title>Bawz PH</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Lexend+Exa:wght@100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Racing+Sans+One&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Share+Tech+Mono&family=Barlow+Condensed:ital,wght@0,300;0,400;0,600;0,700;0,800;1,400&family=Barlow:wght@300;400;500;600&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
   </head>
 
   <body>
-    <!-- Navigation Bar -->
+    <!-- Structural grid overlay -->
+    <div class="grid-overlay" aria-hidden="true">
+      <div class="grid-line gl-v gl-v1"></div>
+      <div class="grid-line gl-v gl-v2"></div>
+      <div class="grid-line gl-h gl-h1"></div>
+      <div class="grid-line gl-h gl-h2"></div>
+    </div>
+
+    <!-- Navigation -->
     <nav class="navbar">
+      <div class="nav-rail" aria-hidden="true"></div>
       <div class="container nav-container">
         <div class="logo">
-          <a href="#home"><img src="images/bawz-logo.jpg" alt="Bawz Logo" /></a>
+          <a href="#home">
+            <div class="logo-bracket" aria-hidden="true">[</div>
+            <img src="images/bawz-logo.jpg" alt="Bawz Logo" />
+            <div class="logo-bracket" aria-hidden="true">]</div>
+          </a>
         </div>
 
-        <!-- Hamburger -->
         <div class="hamburger" id="hamburger">
           <span></span>
           <span></span>
@@ -26,28 +38,73 @@
         </div>
 
         <div class="nav-links" id="navLinks">
-          <a href="#home">Home</a>
-          <a href="#about">About</a>
-          <a href="#competitions">Competitions</a>
-          <a href="#services">Services</a>
-          <a href="#events">Events</a>
-          <a href="#contact">Contact</a>
+          <a href="#home"><span class="nav-num mono">01/</span>Home</a>
+          <a href="#about"><span class="nav-num mono">02/</span>About</a>
+          <a href="#competitions"><span class="nav-num mono">03/</span>Competitions</a>
+          <a href="#services"><span class="nav-num mono">04/</span>Services</a>
+          <a href="#events"><span class="nav-num mono">05/</span>Events</a>
+          <a href="#contact"><span class="nav-num mono">06/</span>Contact</a>
         </div>
       </div>
     </nav>
 
     <!-- Hero Section -->
     <section class="hero-section" id="home">
-      <div class="container">
-        <h1>
-          Raw Like A
-          <span class="boss">Boss.</span>
-        </h1>
-        <p class="hero-description">Bawz is a Philippine-based dance collective driven by individuality and rawness in movement.</p>
+      <div class="hero-photo-wrap">
+        <img src="images/hero-bg.jpg" alt="Bawz PH" class="hero-photo" />
+        <div class="hero-overlay"></div>
+      </div>
 
+      <!-- Corner brackets -->
+      <div class="corner-mark cm-tl" aria-hidden="true"></div>
+      <div class="corner-mark cm-tr" aria-hidden="true"></div>
+      <div class="corner-mark cm-bl" aria-hidden="true"></div>
+      <div class="corner-mark cm-br" aria-hidden="true"></div>
+
+      <!-- Side labels -->
+      <div class="hero-side-label hero-side-l" aria-hidden="true">
+        <span class="mono">BAWZ-PH / 2019</span>
+      </div>
+      <div class="hero-side-label hero-side-r" aria-hidden="true">
+        <span class="mono">DANCE · RAWNESS · MOVEMENT</span>
+      </div>
+
+      <!-- Horizontal crosshair lines -->
+      <div class="hero-crosshair" aria-hidden="true">
+        <div class="ch-h"></div>
+        <div class="ch-v"></div>
+        <div class="ch-dot"></div>
+      </div>
+
+      <div class="hero-content">
+        <h1 class="hero-title">
+          <span class="title-raw">RAW</span>
+          <span class="title-like"> LIKE A</span>
+          <br/>
+          <span class="title-boss">BOSS.</span>
+        </h1>
+        <div class="hero-rule" aria-hidden="true">
+          <div class="rule-line"></div>
+          <div class="rule-label mono">SINCE 2019</div>
+          <div class="rule-line"></div>
+        </div>
+        <p class="hero-description">Bawz is a Philippine-based dance collective driven by individuality and rawness in movement.</p>
         <div class="hero-btns">
-          <a href="#services" class="btn service-btn">Explore Our Services</a>
-          <a href="https://jerico-de.github.io/bawz-complex-website/" class="btn studio-btn">Visit Our Studio</a>
+          <a href="#services" class="btn btn-primary">
+            <span class="btn-bracket" aria-hidden="true">▶</span>
+            Explore Services
+          </a>
+          <a href="https://jerico-de.github.io/bawz-complex-website/" class="btn btn-secondary" target="_blank">
+            Visit Our Studio
+            <span class="btn-arrow" aria-hidden="true">→</span>
+          </a>
+        </div>
+        <div class="hero-stat-bar" aria-hidden="true">
+          <span class="mono stat-item">80+ DANCERS</span>
+          <span class="stat-sep">|</span>
+          <span class="mono stat-item">INTL. COMPETITIONS</span>
+          <span class="stat-sep">|</span>
+          <span class="mono stat-item">QC, PHILIPPINES</span>
         </div>
       </div>
     </section>
@@ -55,26 +112,58 @@
     <!-- About Section -->
     <section class="section" id="about">
       <div class="container">
-        <h2 class="section-header">About Us</h2>
+        <div class="section-head">
+          <div class="section-index mono">02</div>
+          <div class="section-title-wrap">
+            <div class="section-beam" aria-hidden="true"></div>
+            <h2 class="section-header">About Us</h2>
+          </div>
+          <div class="section-rule" aria-hidden="true"></div>
+        </div>
+
         <div class="about-content">
           <div class="about-text">
-            <p>
-              Bawz PH was founded in
-              <strong>2019</strong>
-              by a group of individuals united by the same raw style and vision, led by
-              <span class="highlight">Aennon Tabungar</span>
-              .
-            </p>
+            <div class="about-text-inner">
+              <div class="text-bracket-left" aria-hidden="true"></div>
+              <div class="about-paragraphs">
+                <p>
+                  Bawz PH was founded in <strong>2019</strong> by a group of individuals united by the same raw style and vision, led by <span class="highlight">Aennon Tabungar</span>.
+                </p>
+                <p>
+                  What started as a small collective has grown into a powerful movement. Today, directed by Aennon Tabungar, Bawz is home to <strong>80+ dancers</strong>, each bringing their own flavor, story, and energy—yet moving as one.
+                </p>
+              </div>
+            </div>
 
-            <p>
-              What started as a small collective has grown into a powerful movement. Today, Directed by Aennon Tabungar, Bawz is home to
-              <strong>80+ dancers</strong>
-              , each bringing their own flavor, story, and energy—yet moving as one.
-            </p>
+            <div class="about-spec-grid">
+              <div class="spec-item">
+                <div class="spec-label mono">FOUNDED</div>
+                <div class="spec-value">2019</div>
+              </div>
+              <div class="spec-item">
+                <div class="spec-label mono">MEMBERS</div>
+                <div class="spec-value">80+</div>
+              </div>
+              <div class="spec-item">
+                <div class="spec-label mono">DIRECTOR</div>
+                <div class="spec-value">A. TABUNGAR</div>
+              </div>
+              <div class="spec-item">
+                <div class="spec-label mono">BASE</div>
+                <div class="spec-value">PH</div>
+              </div>
+            </div>
           </div>
 
-          <div class="about-image">
-            <img src="images/ae-about.jpg" alt="Director Aennon Tabungar" />
+          <div class="about-image-wrap">
+            <div class="image-frame">
+              <div class="frame-corner fc-tl" aria-hidden="true"></div>
+              <div class="frame-corner fc-tr" aria-hidden="true"></div>
+              <div class="frame-corner fc-bl" aria-hidden="true"></div>
+              <div class="frame-corner fc-br" aria-hidden="true"></div>
+              <div class="frame-label mono" aria-hidden="true">DIRECTOR / AENNON TABUNGAR</div>
+              <img src="images/ae-about.jpg" alt="Director Aennon Tabungar" />
+            </div>
           </div>
         </div>
       </div>
@@ -83,51 +172,81 @@
     <!-- Competitions Section -->
     <section class="section section-dark" id="competitions">
       <div class="container">
-        <h2 class="section-header">Competitions</h2>
+        <div class="section-head">
+          <div class="section-index mono">03</div>
+          <div class="section-title-wrap">
+            <div class="section-beam" aria-hidden="true"></div>
+            <h2 class="section-header">Competitions</h2>
+          </div>
+          <div class="section-rule" aria-hidden="true"></div>
+        </div>
+
         <p class="section-intro">
           Bawz continues to challenge itself by stepping onto competitive stages locally and internationally. These experiences shape our discipline, creativity, and hunger to evolve.
         </p>
+
         <div class="card-grid">
           <div class="card">
-            <div class="card-image">
-              <img src="images/comp-danceEx.jpg" alt="Bawz at Lion CityLight Dance Competition" />
-            </div>
-            <div class="competitions-overlay">
-              <a href="https://www.youtube.com/watch?v=Lp1rShJ9FuU" class="btn-sm" target="_blank">Watch Performance</a>
+            <div class="card-image-wrap">
+              <div class="card-num mono" aria-hidden="true">C-01</div>
+              <div class="card-image">
+                <img src="images/comp-danceEx.jpg" alt="Lion Citylite Dance Competition" />
+              </div>
+              <div class="competitions-overlay">
+                <a href="https://www.youtube.com/watch?v=Lp1rShJ9FuU" class="btn-sm" target="_blank">
+                  <span>▶</span> Watch Performance
+                </a>
+              </div>
             </div>
             <div class="card-content">
+              <div class="card-status mono">CHAMPION</div>
               <h3>Lion Citylite Dance Competition</h3>
-              <p class="card-meta">August 3, 2025 | Singapore</p>
-              <p class="card-description">16 members | Only Philippine team | Won against international teams to claim the championship</p>
+              <p class="card-meta mono">AUG 03, 2025 · SINGAPORE</p>
+              <p class="card-description">16 members · Only Philippine team · Won against international teams to claim the championship</p>
             </div>
+            <div class="card-rail" aria-hidden="true"></div>
           </div>
 
           <div class="card">
-            <div class="card-image">
-              <img src="images/comp-chosenGrounds.jpg" alt="Bawz at Chosen Grounds Competition" />
-            </div>
-            <div class="competitions-overlay">
-              <a href="https://www.youtube.com/watch?v=D3bj1BPbEuY" class="btn-sm" target="_blank">Watch Performance</a>
+            <div class="card-image-wrap">
+              <div class="card-num mono" aria-hidden="true">C-02</div>
+              <div class="card-image">
+                <img src="images/comp-chosenGrounds.jpg" alt="Chosen Grounds" />
+              </div>
+              <div class="competitions-overlay">
+                <a href="https://www.youtube.com/watch?v=D3bj1BPbEuY" class="btn-sm" target="_blank">
+                  <span>▶</span> Watch Performance
+                </a>
+              </div>
             </div>
             <div class="card-content">
+              <div class="card-status mono card-status--2nd">2ND PLACE</div>
               <h3>Chosen Grounds</h3>
-              <p class="card-meta">May 5, 2025 | Metropolitan Theater, Manila</p>
-              <p class="card-description">30 members | Competed against 20+ teams | Secured 2nd place with raw energy and precision</p>
+              <p class="card-meta mono">MAY 05, 2025 · MET THEATER, MANILA</p>
+              <p class="card-description">30 members · Competed against 20+ teams · Secured 2nd place with raw energy and precision</p>
             </div>
+            <div class="card-rail" aria-hidden="true"></div>
           </div>
 
           <div class="card">
-            <div class="card-image">
-              <img src="images/comp-wsup.jpg" alt="Bawz at WSUP Competition" />
-            </div>
-            <div class="competitions-overlay">
-              <a href="https://www.youtube.com/watch?v=sq0XcF-B-LU" class="btn-sm" target="_blank">Watch Performance</a>
+            <div class="card-image-wrap">
+              <div class="card-num mono" aria-hidden="true">C-03</div>
+              <div class="card-image">
+                <img src="images/comp-wsup.jpg" alt="WSUP Competition" />
+              </div>
+              <div class="competitions-overlay">
+                <a href="https://www.youtube.com/watch?v=sq0XcF-B-LU" class="btn-sm" target="_blank">
+                  <span>▶</span> Watch Performance
+                </a>
+              </div>
             </div>
             <div class="card-content">
+              <div class="card-status mono card-status--3rd">3RD RUNNER-UP</div>
               <h3>WSUP – Worldwide Stage Uniting Performers</h3>
-              <p class="card-meta">October 16, 2024 | Changsha, China</p>
-              <p class="card-description">Only Philippine team | Competed against 30+ international teams | Finished 3rd runner-up</p>
+              <p class="card-meta mono">OCT 16, 2024 · CHANGSHA, CHINA</p>
+              <p class="card-description">Only Philippine team · Competed against 30+ international teams · Finished 3rd runner-up</p>
             </div>
+            <div class="card-rail" aria-hidden="true"></div>
           </div>
         </div>
       </div>
@@ -136,52 +255,73 @@
     <!-- Services Section -->
     <section class="section" id="services">
       <div class="container">
-        <h2 class="section-header">Work With Us</h2>
+        <div class="section-head">
+          <div class="section-index mono">04</div>
+          <div class="section-title-wrap">
+            <div class="section-beam" aria-hidden="true"></div>
+            <h2 class="section-header">Work With Us</h2>
+          </div>
+          <div class="section-rule" aria-hidden="true"></div>
+        </div>
+
         <p class="section-intro">
-          Bawz offers a range of services to bring dynamic dance performances and creative energy to your events and projects. Whether you're looking for captivating stage performances, engaging
-          workshops, or custom choreography, we have the expertise to elevate your vision.
+          Bawz offers a range of services to bring dynamic dance performances and creative energy to your events and projects.
         </p>
 
-        <div class="service-card">
-          <h3 class="service-title">
-            <span class="highlight">Brands</span>
-            We've Worked With
-          </h3>
-          <p class="service-description">
-            We believe in creative collaborations that align with culture, movement, and community. Bawz has worked with both established and emerging brands through performances, campaigns, and live
-            events.
-          </p>
+        <div class="service-panel">
+          <div class="service-panel-header">
+            <div class="spanel-index mono">SVC-01</div>
+            <h3 class="service-title"><span class="highlight">Brands</span> We've Worked With</h3>
+            <div class="spanel-rule" aria-hidden="true"></div>
+          </div>
+          <p class="service-description">We believe in creative collaborations that align with culture, movement, and community. Bawz has worked with both established and emerging brands through performances, campaigns, and live events.</p>
           <div class="logos-row">
-            <img src="images/brands-uniqlo.png" alt="Uniqlo Logo" />
-            <img src="images/brands-chevrolet.png" alt="Chevrolet Logo" />
-            <img src="images/brands-winston.png" alt="Winston Logo" />
+            <div class="logo-cell">
+              <img src="images/brands-uniqlo.png" alt="Uniqlo" />
+            </div>
+            <div class="logo-cell">
+              <img src="images/brands-chevrolet.png" alt="Chevrolet" />
+            </div>
+            <div class="logo-cell">
+              <img src="images/brands-winston.png" alt="Winston" />
+            </div>
           </div>
         </div>
 
-        <div class="service-card">
-          <h3 class="service-title service-title-right">
-            Sponsorship &
-            <span class="highlight">Partnership</span>
-          </h3>
+        <div class="service-panel">
+          <div class="service-panel-header">
+            <div class="spanel-index mono">SVC-02</div>
+            <h3 class="service-title">Sponsorship & <span class="highlight">Partnership</span></h3>
+            <div class="spanel-rule" aria-hidden="true"></div>
+          </div>
           <p class="service-description">We offer tailored sponsorship packages that provide unique opportunities for brand exposure and engagement through our dynamic dance performances.</p>
           <div class="logos-row">
-            <img src="images/spons-dri+.png" alt="Dri+ Logo" />
-            <img src="images/spons-quickfx.png" alt="QuickFX Logo" />
+            <div class="logo-cell">
+              <img src="images/spons-dri+.png" alt="Dri+" />
+            </div>
+            <div class="logo-cell">
+              <img src="images/spons-quickfx.png" alt="QuickFX" />
+            </div>
+            <div class="logo-cell">
+              <img src="images/brands-boosterc.png" alt="Booster C" />
+            </div>
           </div>
         </div>
 
-        <div class="service-card">
-          <h3 class="service-title">
-            <span class="highlight">Gig</span>
-            Bookings
-          </h3>
-          <p class="service-description">
-            Whether it's a corporate function, festival, or private celebration, our team is ready to bring high-energy performances that captivate and entertain your audience.
-          </p>
+        <div class="service-panel">
+          <div class="service-panel-header">
+            <div class="spanel-index mono">SVC-03</div>
+            <h3 class="service-title"><span class="highlight">Gig</span> Bookings</h3>
+            <div class="spanel-rule" aria-hidden="true"></div>
+          </div>
+          <p class="service-description">Whether it's a corporate function, festival, or private celebration, our team is ready to bring high-energy performances that captivate and entertain your audience.</p>
         </div>
 
         <div class="cta-wrapper">
-          <a href="#contact" class="btn service-btn">Work With Us</a>
+          <a href="#contact" class="btn btn-primary btn-large">
+            <span class="btn-bracket" aria-hidden="true">▶</span>
+            Work With Us
+          </a>
         </div>
       </div>
     </section>
@@ -189,51 +329,63 @@
     <!-- Events Section -->
     <section class="section section-dark" id="events">
       <div class="container">
-        <h2 class="section-header">Events</h2>
+        <div class="section-head">
+          <div class="section-index mono">05</div>
+          <div class="section-title-wrap">
+            <div class="section-beam" aria-hidden="true"></div>
+            <h2 class="section-header">Events</h2>
+          </div>
+          <div class="section-rule" aria-hidden="true"></div>
+        </div>
+
         <p class="section-intro">
           More than performances, our events create spaces for dancers to grow, connect, and be seen — from community classes to full-scale showcases and international qualifiers.
         </p>
+
         <div class="card-grid">
           <div class="card">
-            <div class="card-image">
-              <img src="images/events-communityClasses.jpg" alt="Bawz Annual Showcase" />
+            <div class="card-image-wrap">
+              <div class="card-num mono" aria-hidden="true">E-01</div>
+              <div class="card-image">
+                <img src="images/events-communityClasses.jpg" alt="Community Classes" />
+              </div>
             </div>
             <div class="card-content">
               <h3>Bawz Complex Community Classes</h3>
-              <p class="card-meta">December 27–28, 2025 | Bawz Complex</p>
-              <p class="card-description">
-                A community-driven, pay-what-you-can dance event created to make movement accessible to everyone. Over two full days, Bawz PH hosted back-to-back classes featuring multiple styles and
-                levels, allowing dancers of all backgrounds to learn, grow, and connect in one shared space.
-              </p>
+              <p class="card-meta mono">DEC 27–28, 2025 · BAWZ COMPLEX</p>
+              <p class="card-description">A community-driven, pay-what-you-can dance event created to make movement accessible to everyone. Over two full days featuring multiple styles and levels.</p>
             </div>
+            <div class="card-rail" aria-hidden="true"></div>
           </div>
 
           <div class="card">
-            <div class="card-image">
-              <img src="images/events-bawzStage.jpg" alt="Bawz Dance Workshop" />
+            <div class="card-image-wrap">
+              <div class="card-num mono" aria-hidden="true">E-02</div>
+              <div class="card-image">
+                <img src="images/events-bawzStage.jpg" alt="Bawz Stage Vol 3" />
+              </div>
             </div>
             <div class="card-content">
               <h3>Bawz Stage: Volume 3</h3>
-              <p class="card-meta">July 26, 2025 | SM Skydome</p>
-              <p class="card-description">
-                Bawz Stage Volume 3 was a full-scale dance concert showcasing Bawz PH's versatility through original pieces across different styles. The night also featured performances from various
-                dance teams in the community, turning the stage into a celebration of creativity, collaboration, and raw performance energy.
-              </p>
+              <p class="card-meta mono">JUL 26, 2025 · SM SKYDOME</p>
+              <p class="card-description">A full-scale dance concert showcasing Bawz PH's versatility through original pieces across different styles, featuring performances from various dance teams.</p>
             </div>
+            <div class="card-rail" aria-hidden="true"></div>
           </div>
 
           <div class="card">
-            <div class="card-image">
-              <img src="images/events-summerJam.jpg" alt="Bawz International Qualifier" />
+            <div class="card-image-wrap">
+              <div class="card-num mono" aria-hidden="true">E-03</div>
+              <div class="card-image">
+                <img src="images/events-summerJam.jpg" alt="SummerJam Qualifier" />
+              </div>
             </div>
             <div class="card-content">
-              <h3>SummerJam Showcase Competition Philippine Qualifier</h3>
-              <p class="card-meta">November 16, 2024 | Henry Lee Irwin Theater</p>
-              <p class="card-description">
-                Bawz PH proudly organized the Philippine Qualifier for the SummerJam Showcase Competition, an international dance franchise originating in Vietnam. The event gathered top local teams
-                competing for a chance to represent the Philippines on the global stage against international contenders.
-              </p>
+              <h3>SummerJam Showcase PH Qualifier</h3>
+              <p class="card-meta mono">NOV 16, 2024 · HENRY LEE IRWIN THEATER</p>
+              <p class="card-description">Philippine Qualifier for the SummerJam Showcase Competition, an international dance franchise from Vietnam. Top local teams competing for a global stage.</p>
             </div>
+            <div class="card-rail" aria-hidden="true"></div>
           </div>
         </div>
       </div>
@@ -242,79 +394,103 @@
     <!-- Contact Section -->
     <section class="section" id="contact">
       <div class="container">
-        <h2 class="section-header">Contact Us</h2>
-        <p class="section-intro">Whether you're interested in booking Bawz for an event, collaborating on a project, or simply want to learn more about what we do, we'd love to hear from you!</p>
+        <div class="section-head">
+          <div class="section-index mono">06</div>
+          <div class="section-title-wrap">
+            <div class="section-beam" aria-hidden="true"></div>
+            <h2 class="section-header">Contact Us</h2>
+          </div>
+          <div class="section-rule" aria-hidden="true"></div>
+        </div>
 
-        <div class="contact-content">
-          <div class="contact-card">
-            <div class="contact-method">
-              <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <p class="section-intro">Whether you're interested in booking Bawz for an event, collaborating on a project, or simply want to learn more about what we do, we'd love to hear from you.</p>
+
+        <div class="contact-grid">
+          <div class="contact-block">
+            <div class="contact-block-label mono">CHANNEL-01</div>
+            <div class="contact-block-inner">
+              <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
                 <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
                 <polyline points="22,6 12,13 2,6"></polyline>
               </svg>
-              <div class="contact-details">
-                <h3>Email</h3>
-                <a href="mailto:bawzph@gmail.com">bawzph@gmail.com</a>
+              <div>
+                <div class="contact-type mono">EMAIL</div>
+                <a href="mailto:bawzph@gmail.com" class="contact-link">bawzph@gmail.com</a>
               </div>
             </div>
           </div>
 
-          <div class="contact-card">
-            <div class="contact-method">
+          <div class="contact-block">
+            <div class="contact-block-label mono">CHANNEL-02</div>
+            <div class="contact-block-inner">
               <svg class="contact-icon" viewBox="0 0 24 24" fill="currentColor">
-                <path
-                  d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"
-                />
+                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
               </svg>
-              <div class="contact-details">
-                <h3>Facebook</h3>
-                <a href="https://www.facebook.com/bawz.ph" target="_blank">Bawz Profile</a>
+              <div>
+                <div class="contact-type mono">FACEBOOK</div>
+                <a href="https://www.facebook.com/bawz.ph" target="_blank" class="contact-link">Bawz Profile →</a>
               </div>
             </div>
           </div>
 
-          <div class="contact-card">
-            <div class="contact-method">
+          <div class="contact-block">
+            <div class="contact-block-label mono">CHANNEL-03</div>
+            <div class="contact-block-inner">
               <svg class="contact-icon" viewBox="0 0 24 24" fill="currentColor">
-                <path
-                  d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
-                />
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
               </svg>
-              <div class="contact-details">
-                <h3>Instagram</h3>
-                <a href="https://www.instagram.com/bawz.ph?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">Bawz Profile</a>
+              <div>
+                <div class="contact-type mono">INSTAGRAM</div>
+                <a href="https://www.instagram.com/bawz.ph" target="_blank" class="contact-link">@bawz.ph →</a>
               </div>
             </div>
           </div>
         </div>
 
         <div class="contact-cta">
-          <p>Connect with us on social media or send us an email. We're excited to work with you!</p>
+          <div class="cta-line" aria-hidden="true"></div>
+          <p class="mono">CONNECT WITH US — WE'RE READY TO BUILD SOMETHING.</p>
+          <div class="cta-line" aria-hidden="true"></div>
         </div>
       </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
-      <div class="container">
-        <p>&copy; 2024 Bawz PH. All rights reserved. Developed by Jerico Crisostomo</p>
+      <div class="footer-rail" aria-hidden="true"></div>
+      <div class="container footer-inner">
+        <div class="footer-logo mono">[ BAWZ PH ]</div>
+        <p class="footer-copy mono">© 2024 BAWZ PH. ALL RIGHTS RESERVED. / DEV: JERICO CRISOSTOMO</p>
+        <div class="footer-mark mono">EST. 2019</div>
       </div>
     </footer>
 
-    <!-- Script -->
     <script>
       const hamburger = document.getElementById("hamburger");
       const navLinks = document.getElementById("navLinks");
 
       hamburger.addEventListener("click", () => {
         navLinks.classList.toggle("active");
+        hamburger.classList.toggle("open");
       });
 
       document.querySelectorAll(".nav-links a").forEach((link) => {
         link.addEventListener("click", () => {
           navLinks.classList.remove("active");
+          hamburger.classList.remove("open");
         });
       });
+
+      // Tick counter animation on about specs
+      const specs = document.querySelectorAll('.spec-value');
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('animate-in');
+          }
+        });
+      }, { threshold: 0.3 });
+      specs.forEach(s => observer.observe(s));
     </script>
   </body>
 </html>
