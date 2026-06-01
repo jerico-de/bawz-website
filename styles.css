@@ -634,7 +634,7 @@ img {
 
 .image-frame img {
   width: 100%;
-  aspect-ratio: 4/5;
+  aspect-ratio: 5/4;
   object-fit: cover;
   filter: grayscale(20%) contrast(1.05);
   transition: filter var(--transition);
